@@ -1,4 +1,4 @@
-# Exp.No:28  
+# Exp.No:6a
 ## Abstraction
 
 ---
@@ -34,11 +34,32 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
-
+#Reg.No: 212222060074
+#Name: Hariharan K
+#Add Your Code Here
+from abc import ABC
+class Shape(ABC):
+    def calculate_area(self):
+        pass
+class Rectangle(Shape):
+    length = 5
+    breadth =3 
+    def calculate_area(self):
+        return self.length * self.breadth
+class Circle(Shape):
+  radius = 4
+  def calculate_area(self):
+      return 3.14 * self.radius * self.radius
+rec=Rectangle()
+cir=Circle()
+print("Area of a rectangle:", rec.calculate_area())
+print("Area of a circle:", cir.calculate_area())
 
 ```
 
 ### OUTPUT
+<img width="1182" height="216" alt="image" src="https://github.com/user-attachments/assets/600ac829-6a61-451e-b8b9-ec2b5e09b122" />
 
 
 ### RESULT
+Therefore, the output is the example to write a Python program to define the abstract base class named Polygon and also define the abstract method. This base class is inherited by various subclasses. Implement the abstract method in each subclass. Create objects of the subclasses and invoke the sides() method.
